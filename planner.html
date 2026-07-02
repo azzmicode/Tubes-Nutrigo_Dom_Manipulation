@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Planner | Atur Menu Makananmu</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+        <nav class="navbar">
+            <h2>NutriGo</h2>
+            <div class="nav-links">
+                <a href="index.html">Beranda</a>
+                <a href="planner.html">Planner</a>
+            </div>
+        </nav>
+
+        <main class="planner-container">
+            <section class="menu-section">
+                <div class="section-header">
+                    <h2>Daftar Menu</h2>
+                </div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Gambar</th>
+                            <th>Nama Menu</th>
+                            <th>Kategori</th>
+                            <th>Kalori</th>
+                            <th>Harga</th>
+                            <th>Pilih</th>
+                        </tr>
+                    </thead>
+                    <tbody id="menuTableBody">
+                    </tbody>
+                </table>
+            </section>
+
+            <aside class="result-panel">
+                <h2>Hasil Pilihan</h2>
+
+                <div id="emptyState" class="empty-state">
+                    <p style="text-align: center; color: #6b7280; font-style: italic;">
+                        Belum ada menu yang dipilih.<br>Silakan <u>centang menu di tabel</u> terlebih dahulu.
+                    </p>
+                </div>
+
+                <div id="resultContent" style="display: none;">
+                    
+                    <div class="result-box">
+                        <p>Menu Terpilih</p>
+                        <div id="imageStack" class="image-stack">
+                            </div>
+                    </div>
+
+                    <div class="result-box">
+                        <p>Total Kalori</p>
+                        <h3 id="totalKalori">0 kkal</h3>
+                    </div>
+
+                    <div class="result-box">
+                        <p>Total Harga</p>
+                        <h3 id="totalHarga">Rp 0</h3>
+                    </div>
+
+                    <div class="result-box">
+                        <h4>KELENGKAPAN KATEGORI GIZI</h4>
+                        <ul>
+                            <p id="cekPokok">❌ Makanan Pokok</p>
+                            <p id="cekLauk">❌ Lauk-Pauk</p>
+                            <p id="cekSayur">❌ Sayur</p>
+                            <p id="cekBuah">❌ Buah</p>
+                            <p id="cekMinuman">❌ Minuman</p>
+                        </ul>
+                    </div>
+
+                    <div class="badge warning" id="badge">
+                        ⚠️ Belum Lengkap
+                    </div>
+                </div>
+
+            </aside>
+        </main>
+
+        <footer>
+            <p>NutriGo | Tubes WCD</p>
+        </footer>
+
+        <script src="script.js"></script>
+
+    </body>
+</html>
